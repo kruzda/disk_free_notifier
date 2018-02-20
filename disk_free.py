@@ -5,8 +5,8 @@ import smtplib
 alert_state_file = '/home/k/disk_space_notification_status'
 
 def notify(dfr):
-    fr = "eth-node <eth-node@kuk.ac>"
-    to = "crs666@gmail.com"
+    fr = ""
+    to = ""
     msg = "From: {}\r\nTo: {}\r\n".format(fr, to)
     msg += "Subject: Disk space alert\r\n\r\n"
     msg += "Free disk space is {}%".format(int(dfr * 100))
