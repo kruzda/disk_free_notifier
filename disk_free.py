@@ -2,7 +2,7 @@
 import shutil
 import smtplib
 
-alert_state_file = '/home/k/disk_space_notification_status'
+alert_state_file = '/tmp/disk_space_notification_status'
 
 def notify(dfr):
     fr = ""
